@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+
+    body{
+      background-color: #333;
+    }
+    /* '.' is for classes and '#' if for ids */
+    /* It is good convention to follow that only id exist in page and multiple classes */
+    .green-heading{
+      color:green;
+    }
+    
+    #welcome{
+      background-color: #f4f4f4;
+    }
+    /* Multiple Selectors, here we can add elements also like h2, p, div etc.. */
+    #welcome, #about{
+      border: solid 1px #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* Nested Selection */
+    #welcome p{
+      /* default size is 16px */
+      font-size: 20px;
+    }
+
+    #about{
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 class='green-heading'>Welcome</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, molestias dolores, dolor 
+      maiores sequi, ipsam fuga ad accusamus quidem porro possimus aperiam magnam tenetur! Placeat 
+      veniam nam adipisci accusamus! Saepe minima nobis exercitationem facilis est. Quasi quisquam, 
+      maxime velit blanditiis aut dicta totam ex aspernatur vitae numquam, nobis minus repudiandae.</p>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A natus id et. Enim reiciendis, natus 
+      id non facere magni distinctio? Modi non ducimus cum eos placeat architecto delectus, debitis 
+      odit quidem aperiam explicabo reiciendis quisquam vel culpa eveniet voluptates nisi, aliquid 
+      asperiores sint! Maiores consequuntur aperiam eos hic, repellat modi.</p>
+  </div>
+</body>
+</html>

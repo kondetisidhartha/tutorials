@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rem & EM</title>
+  <style>
+    html{
+      font-size: 10px;
+      /* font-size 62.5% is same as 10px  */
+    }
+    /* #box-1{
+      font-size: 20px;
+    }
+
+    #box-1 p{
+      font-size: 1.5em; */
+      /* Above padding takes em from box-1#p but not #box-1 font size */
+      /* padding: 1em; 
+    } */
+    /* em also confusing for nested lists */
+    /* #box-1 ul{
+      font-size: 1.2em;
+    } */
+    #box-2 h3{
+      font-size: 2rem;
+    }
+    #box-2 p{
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div id="box-1">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem 
+      quibusdam obcaecati quis ab voluptates nesciunt esse totam autem fuga?</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </li>
+      <li>4</li>
+    </ul>
+  </div> -->
+
+  <div id="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem 
+      quibusdam obcaecati quis ab voluptates nesciunt esse totam autem fuga?</p>
+  </div>
+</body>
+</html>

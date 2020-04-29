@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model/ Margin & Padding</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .box{
+      background: #f4f4f4;
+      border: 2px solid #777;
+      width: 500px;
+
+      /* Padding per side */
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+
+      /* Padding shorthand = top right bottom left */
+      padding: 10px 20px 10px 20px;
+      /* If top and left are same to bottom and right use two value notation 
+      padding two notation = top/bottom left/right*/
+      padding: 10px 20px;
+
+      /* Padding on all sides */
+      padding: 120px;
+    
+
+      /* Margin on all sides */
+      margin: 10px;
+      /* Margin per side */
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+
+      /* margin shorthand = top right bottom left */
+      margin: 10px 20px 10px 20px;
+      /* If top and left are same to bottom and right use two value notation 
+      margin two notation = top/bottom left/right*/
+      margin: 10px 20px;
+    }
+
+    .box h2{
+        margin-bottom: 10px;
+      }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Box One</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae quae autem, at maiores doloribus eveniet? Nostrum autem assumenda rerum perferendis, iure nisi aliquid. Fuga optio labore rem explicabo pariatur?</p>
+  </div>
+  <div class="box">
+    <h2>Box Two</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae quae autem, at maiores doloribus eveniet? Nostrum autem assumenda rerum perferendis, iure nisi aliquid. Fuga optio labore rem explicabo pariatur?</p>
+  </div>
+</body>
+</html>

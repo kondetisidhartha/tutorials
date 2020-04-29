@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aside Visibility</title>
+  <style>
+    .hello{
+      color:red;
+    }
+    /* even though h2 has color blue set in h2 and h2 is below class hello,
+    the hello class overrides h2 element style */
+
+    /* But to make one property more than other we can use important */
+    h2{
+      /* display:none removes completely from DOM */
+      /* display: none; */
+      /* Below just hides, just element take place in DOM */
+      /* visibility: hidden; */
+      color: blue !important;
+    }
+  </style>
+</head>
+<body>
+  <h2 class='hello'>Hello World</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam animi eos aliquid tenetur, earum magni.</p>
+</body>
+</html>

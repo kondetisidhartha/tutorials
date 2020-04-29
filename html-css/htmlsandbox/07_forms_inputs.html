@@ -1,0 +1,66 @@
+<!-- html shows forms and css styles it
+but the submit data and other stuff happens backend using php or python or js 
+like registration or contact pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms and inputs</title>
+</head>
+<body>
+  <form action=""> 
+    <!-- action is the place form will be submitted like database where values from form are used 
+      or some sort of action to happen in another page -->
+    <div>
+      <!-- here 'for' in label should match with 'id' of input so labels are matched to inputs-->
+      <!-- 'name' in input will be used at server side to fetch the details given in input -->
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name='nameforserverside' value="John Doe">
+    </div>
+    <div>
+      <label for="email_id">Email</label><br>
+      <input type="email" name="email_value" id="email_id" placeholder="Enter an email">
+      <!-- 'type' as email is just client side validation -->
+    </div>
+    <div>
+      <label for="textarea_id">Message</label><br>
+      <textarea name="textarea_value" id="textarea_id" rows='5' cols="50"></textarea>
+    </div>
+    <div>
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+        <option value="others">Others</option>
+      </select>
+    </div>
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age">
+    </div>
+    <div>
+      <label for="birthdate">Birthdate</label><br>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <div>
+      <label for="membership">Membership</label>
+      <input type="radio" name="membership" id="membership" value="simple">Simple
+      <!-- here 'value' is sent to backend as 'name' membership-->
+      <input type="radio" name="membership" id="membership" value="medium" checked>Medium
+      <input type="radio" name="membership" id="membership" value="super">Super
+    </div>
+
+    <div>
+      <label for="hobby">Hobby</label>
+      <input type="checkbox" name="hobby" id="hobby" value="football">football
+      <input type="checkbox" name="hobby" id="hobby" value="cricket" checkbox>cricket
+      <input type="checkbox" name="hobby" id="hobby" value="baseball">baseball
+    </div>
+
+    <input type="submit" value="Submit">
+    <!-- <button type="submit">Submit button</button> -->
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

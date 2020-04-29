@@ -1,0 +1,113 @@
+:root {
+  --page-1-color: steelblue;
+  --page-2-color: tan;
+  --page-3-color: teal;
+  --page-4-color: slateblue;
+
+  --animate-speed: 2s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  /* To hide scrollbar */
+  overflow: hidden;
+}
+
+/* Page colors */
+#page-1 {
+  background: var(--page-1-color);
+}
+#page-2 {
+  background: var(--page-2-color);
+}
+#page-3 {
+  background: var(--page-3-color);
+}
+#page-4 {
+  background: var(--page-4-color);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2em;
+  margin: 1rem;
+  position: relative;
+}
+
+.page p {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Page Animations */
+#page-1 h1 {
+  transform: translateY(-1500px);
+  animation: h1-animation var(--animate-speed) forwards ease-in-out;
+}
+
+#page-1 p {
+  transform: translateX(-1500px);
+  animation: p-animation var(--animate-speed) forwards ease-in-out 2s;
+}
+
+/* Key frames */
+@keyframes h1-animation {
+  /* from {
+    top: -400px;
+    left: 0;
+  } */
+  to {
+    /* top: 0;
+    left: 0; */
+    transform: translateY(0);
+  }
+}
+
+@keyframes p-animation {
+  /* from {
+    top: 0px;
+    left: -800px;
+  } */
+  to {
+    /* top: 0;
+    left: 0; */
+    transform: translateX(0);
+  }
+}

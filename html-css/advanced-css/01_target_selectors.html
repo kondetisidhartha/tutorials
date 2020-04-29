@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Targeted Selectors</title>
+    <style>
+      /* Direct child */
+      div > p {
+        background: #e4e4e4;
+      }
+
+      /* Siblings -  Same level*/
+      div + p {
+        background: #333;
+        color: #fff;
+      }
+
+      /*  select element with attributes */
+      a[target] {
+        background: cyan;
+      }
+
+      /* select element with specific value */
+      a[target="_blank"] {
+        background: red;
+      }
+
+      /* Example */
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <ul>
+        <li>Item 1</li>
+        <li><p>Item 2</p></li>
+        <li>Item 3</li>
+      </ul>
+
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#" target="_self">Link 1</a>
+    <a href="#" target="_self">Link 2</a>
+    <a href="https://google.com" target="_blank">Google</a>
+
+    <br /><br />
+
+    <form>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

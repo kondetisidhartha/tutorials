@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Algin</title>
+  <style>
+    #container{
+      flex-wrap: wrap;
+      background: #ccc;
+      display: flex;
+      /* for row axis */
+      justify-content: space-between;
+      /* https://css-tricks.com/almanac/properties/j/justify-content/ */
+
+      /* for align we must provide height */
+      height: 600px;
+      align-items: flex-start;
+
+      /* when more than 1 row */
+      /* align-content: flex-start; */
+    }
+
+    .item-1{
+      /* Align single item */
+      align-self: flex-end;
+      order: 3;
+    }
+    .item-2{
+      order: 1;
+    }
+    .item-3{
+      order: 2;
+    }
+
+    .item{
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      text-align: center;
+      padding: 1rem;
+      margin: 0.5rem;
+      flex-basis: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item item-1"><h3>Item 1</h3></div>
+    <div class="item item-2"><h3>Item 2</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+  </div>
+</body>
+</html>
