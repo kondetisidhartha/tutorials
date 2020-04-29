@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Bob",
+    "age": 30,
+    "post": "post this"
+  },
+  {
+    "name": "Rob",
+    "age": 40,
+    "post": "post here"
+  },
+  {
+    "name": "Sob",
+    "age": 50,
+    "post": "this here"
+  }
+]
