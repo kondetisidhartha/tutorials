@@ -1,0 +1,8 @@
+.personComp{
+  width: 60%;
+  padding: 16px;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  text-align: center;
+  margin: 16px auto;
+}
